@@ -1,0 +1,197 @@
+2012-10-25 16:56:31 Error: [MissingControllerException] Controller class PagesController could not be found.
+#0 /Users/joeytrapp/Sites/ember/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-29 20:10:19 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/joeytrapp/Sites/ember/View/Layouts/default.ctp, line 13]
+2012-10-29 20:10:19 Error: [FatalErrorException] parse error, expecting `')''
+#0 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/joeytrap...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/joeytrap...', 13, Array)
+#2 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/joeytrap...', 13, Array)
+#3 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-29 20:10:21 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/joeytrapp/Sites/ember/View/Layouts/default.ctp, line 13]
+2012-10-29 20:10:21 Error: [FatalErrorException] parse error, expecting `')''
+#0 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/joeytrap...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/joeytrap...', 13, Array)
+#2 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/joeytrap...', 13, Array)
+#3 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-02 17:03:00 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 /Users/joeytrapp/Sites/ember/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-02 17:03:37 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 /Users/joeytrapp/Sites/ember/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-02 18:53:13 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 /Users/joeytrapp/Sites/ember/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-05 09:45:12 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 /Users/joeytrapp/Sites/ember/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-05 09:47:30 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 /Users/joeytrapp/Sites/ember/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-05 09:58:20 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.1' in 'field list'
+#0 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Post), Array)
+#5 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(598): Model->find('first', Array)
+#6 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Model.php(784): DboSource->query('findById', Array, Object(Post))
+#7 /Users/joeytrapp/Sites/ember/Controller/PostsController.php(30): Model->__call('findById', Array)
+#8 /Users/joeytrapp/Sites/ember/Controller/PostsController.php(30): Post->findById(NULL, '1')
+#9 [internal function]: PostsController->add()
+#10 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/joeytrapp/Sites/ember/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-05 09:58:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.2' in 'field list'
+#0 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Post), Array)
+#5 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(598): Model->find('first', Array)
+#6 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Model.php(784): DboSource->query('findById', Array, Object(Post))
+#7 /Users/joeytrapp/Sites/ember/Controller/PostsController.php(30): Model->__call('findById', Array)
+#8 /Users/joeytrapp/Sites/ember/Controller/PostsController.php(30): Post->findById(NULL, '2')
+#9 [internal function]: PostsController->add()
+#10 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/joeytrapp/Sites/ember/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-05 09:58:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.3' in 'field list'
+#0 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Post), Array)
+#5 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(598): Model->find('first', Array)
+#6 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Model.php(784): DboSource->query('findById', Array, Object(Post))
+#7 /Users/joeytrapp/Sites/ember/Controller/PostsController.php(30): Model->__call('findById', Array)
+#8 /Users/joeytrapp/Sites/ember/Controller/PostsController.php(30): Post->findById(NULL, '3')
+#9 [internal function]: PostsController->add()
+#10 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/joeytrapp/Sites/ember/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-05 10:01:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.4' in 'field list'
+#0 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Post), Array)
+#5 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(598): Model->find('first', Array)
+#6 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Model.php(784): DboSource->query('findById', Array, Object(Post))
+#7 /Users/joeytrapp/Sites/ember/Controller/PostsController.php(30): Model->__call('findById', Array)
+#8 /Users/joeytrapp/Sites/ember/Controller/PostsController.php(30): Post->findById(NULL, '4')
+#9 [internal function]: PostsController->add()
+#10 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/joeytrapp/Sites/ember/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-05 10:01:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.5' in 'field list'
+#0 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Post), Array)
+#5 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(598): Model->find('first', Array)
+#6 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Model.php(784): DboSource->query('findById', Array, Object(Post))
+#7 /Users/joeytrapp/Sites/ember/Controller/PostsController.php(30): Model->__call('findById', Array)
+#8 /Users/joeytrapp/Sites/ember/Controller/PostsController.php(30): Post->findById(NULL, '5')
+#9 [internal function]: PostsController->add()
+#10 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/joeytrapp/Sites/ember/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-05 10:02:57 Error: Fatal Error (64): Can't use method return value in write context in [/Users/joeytrapp/Sites/ember/Controller/PostsController.php, line 28]
+2012-11-05 10:02:57 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/joeytrap...', 28)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/joeytrap...', 28, Array)
+#2 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/joeytrap...', 28, Array)
+#3 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-05 12:59:24 Error: Fatal Error (1): Cannot use object of type stdClass as array in [/Users/joeytrapp/Sites/ember/Controller/AppController.php, line 33]
+2012-11-05 12:59:24 Error: [FatalErrorException] Cannot use object of type stdClass as array
+#0 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot use obje...', '/Users/joeytrap...', 33)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', '/Users/joeytrap...', 33, Array)
+#2 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', '/Users/joeytrap...', 33, Array)
+#3 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-05 13:06:44 Error: Fatal Error (1): Using $this when not in object context in [/Users/joeytrapp/Sites/ember/Controller/AppController.php, line 73]
+2012-11-05 13:06:44 Error: [FatalErrorException] Using $this when not in object context
+#0 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Using $this whe...', '/Users/joeytrap...', 73)
+#1 [internal function]: ErrorHandler::handleError(1, 'Using $this whe...', '/Users/joeytrap...', 73, Array)
+#2 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Using $this whe...', '/Users/joeytrap...', 73, Array)
+#3 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-05 13:08:27 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.1' in 'field list'
+#0 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Post), Array)
+#5 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(598): Model->find('first', Array)
+#6 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Model.php(784): DboSource->query('findById', Array, Object(Post))
+#7 /Users/joeytrapp/Sites/ember/Controller/PostsController.php(31): Model->__call('findById', Array)
+#8 /Users/joeytrapp/Sites/ember/Controller/PostsController.php(31): Post->findById(NULL, '1')
+#9 [internal function]: PostsController->add()
+#10 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/joeytrapp/Sites/ember/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-05 13:09:08 Error: Fatal Error (64): require() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required './functions.php' (include_path='.:/usr/lib/php/pear') in [/Users/joeytrapp/Sites/ember/Config/bootstrap.php, line 110]
+2012-11-05 13:09:08 Error: [FatalErrorException] require() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required './functions.php' (include_path='.:/usr/lib/php/pear')
+#0 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(64, 'require() [<a h...', '/Users/joeytrap...', 110)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [<a h...', '/Users/joeytrap...', 110, Array)
+#2 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'require() [<a h...', '/Users/joeytrap...', 110, Array)
+#3 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-05 13:09:32 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.2' in 'field list'
+#0 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Post), Array)
+#5 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(598): Model->find('first', Array)
+#6 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Model.php(784): DboSource->query('findById', Array, Object(Post))
+#7 /Users/joeytrapp/Sites/ember/Controller/PostsController.php(31): Model->__call('findById', Array)
+#8 /Users/joeytrapp/Sites/ember/Controller/PostsController.php(31): Post->findById(NULL, '2')
+#9 [internal function]: PostsController->add()
+#10 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/joeytrapp/Sites/ember/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-05 13:11:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.3' in 'field list'
+#0 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Post), Array)
+#5 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Datasource/DboSource.php(598): Model->find('first', Array)
+#6 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Model/Model.php(784): DboSource->query('findById', Array, Object(Post))
+#7 /Users/joeytrapp/Sites/ember/Controller/PostsController.php(31): Model->__call('findById', Array)
+#8 /Users/joeytrapp/Sites/ember/Controller/PostsController.php(31): Post->findById(NULL, '3')
+#9 [internal function]: PostsController->add()
+#10 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Developer/Frameworks/cakephp-2.2.3/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/joeytrapp/Sites/ember/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-05 13:50:34 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 /Users/joeytrapp/Sites/ember/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
