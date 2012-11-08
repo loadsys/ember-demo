@@ -4,13 +4,15 @@
 	<meta charset="utf-8">
 	<title>Ember Demo App - <?php echo $title_for_layout; ?></title>
 	<?php echo $this->Html->meta('icon'); ?>
-	<?php echo $this->Html->css('cake.generic'); ?>
+	<?php echo $this->Html->css(array('cake.generic', 'jquery-ui-1.9.1.custom')); ?>
 	<?php echo $this->Html->script(array(
-		'vendors/jquery-1.7.2.min',
+		'vendors/jquery-1.8.2',
+		'vendors/jquery-ui-1.9.1.custom',
 		'vendors/handlebars-1.0.0.beta.6',
 		'vendors/ember-1.0.0-pre.2',
 		'vendors/ember-data',
-		'vendors/date'
+		'vendors/date',
+		'patches/date_transforms'
 	)); ?>
 </head>
 <body>
@@ -40,7 +42,7 @@
 	<script type="text/x-handlebars" data-template-name="posts">
 		<h2>All Posts View</h2>
 		{{#each post in controller}}
-			<h3><a {{action showPost post href=true}}>{{post.title}}</h3>
+			<h3><a {{action viewPost post href=true}}>{{post.title}}</a></h3>
 		{{/each}}
 	</script>
 
@@ -66,12 +68,10 @@
 					<label>Title</label>
 					{{view Ember.TextField valueBinding="title"}}
 				</div>
-				{{#unless isNew}}
-					<div class="input text">
-						<label>Published Date</label>
-						{{view App.DateTextField contentBinding="controller"}}
-					</div>
-				{{/unless}}
+				<div class="input text">
+					<label>Published Date</label>
+					{{view App.DatePickerField valueBinding="publishedDateString" fieldName="publishedDateString"}}
+				</div>
 				<div class="input textarea">
 					<label>Body</label>
 					{{view Ember.TextArea valueBinding="body"}}

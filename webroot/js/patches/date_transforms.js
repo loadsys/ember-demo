@@ -3,7 +3,7 @@ window.DateTransform = {
 		var type = typeof serialized;
 
 		if (type === "string" || type === "number") {
-			return new Date(serialized);
+			return Date.parse(serialized);
 		} else if (serialized === null || serialized === undefined) {
 			// if the value is not present in the data,
 			// return undefined, not null.
@@ -11,6 +11,10 @@ window.DateTransform = {
 		} else {
 			return null;
 		}
+	},
+
+	fromJSON: function(value) {
+		return this.from(value);
 	},
 
 	to: function(date) {
@@ -35,12 +39,15 @@ window.DateTransform = {
 			var dayOfMonth = pad(utcDayOfMonth);
 			var month = months[utcMonth];
 
-			return dayOfWeek + ", " + dayOfMonth + " " + month + " " + utcYear + " " +
-				pad(utcHours) + ":" + pad(utcMinutes) + ":" + pad(utcSeconds) + " GMT";
+			return [utcYear, pad(utcMonth), date.getDate()].join('-') + ' ' + [utcHours, utcMinutes, utcSeconds].join(':');
 		} else if (date === undefined) {
 			return undefined;
 		} else {
 			return null;
 		}
+	},
+
+	toJSON: function(value) {
+		return this.to(value);
 	}
 };

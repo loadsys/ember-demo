@@ -55,10 +55,10 @@ class AppController extends Controller {
 	 */
 	protected function formData() {
 		$data = array();
-		if ($this->request->is('post')) {
-			parse_str(file_get_contents('php://input'), $data);
+		if ($this->request->is('put')) {
+			$data = json_decode($this->request->data, true);
 		} else {
-			$data = $this->request->data;
+			$data = json_decode(file_get_contents('php://input'), true);
 		}
 		return $data;
 	}
