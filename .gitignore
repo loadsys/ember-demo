@@ -4,6 +4,7 @@ Icon?
 tmp/*
 config/core.php
 config/database.php
+Lib/Cake
 
 *.sass-cache
 
