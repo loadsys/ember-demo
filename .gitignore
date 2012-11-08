@@ -1,0 +1,11 @@
+.DS_Store
+Icon?
+
+tmp/*
+config/core.php
+config/database.php
+
+*.sass-cache
+
+*.sublime-project
+*.sublime-workspace
