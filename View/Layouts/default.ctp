@@ -58,6 +58,7 @@
 			<a {{action deletePost controller.content target="controller"}}>Delete</a>
 		</div>
 		<div>{{body}}</div>
+		{{outlet}}
 	</script>
 
 	<script type="text/x-handlebars" data-template-name="post-form">
@@ -78,6 +79,45 @@
 				</div>
 				<div class="submit">
 					<input type="submit" value="Submit">
+				</div>
+			</fieldset>
+		</form>
+	</script>
+
+	<script type="text/x-handlebars" data-template-name="comments">
+		<h3>Comments</h3>
+		{{#each comment in controller}}
+			<div>
+				<p><b>{{comment.name}}</b><i><a {{bindAttr href="comment.website"}}>{{comment.website}}</a></i></p>
+				<p>{{comment.body}}</p>
+				<p>{{comment.created}}</p>
+			</div>
+		{{/each}}
+		{{outlet}}
+	</script>
+
+	<script type="text/x-handlebars" data-template-name="comment-form">
+		<form>
+			<fieldset>
+				<legend>Add Comment</legend>
+				<div class="input text">
+					<label>Name</label>
+					{{view Ember.TextField valueBinding="name"}}
+				</div>
+				<div class="input text">
+					<label>Email</label>
+					{{view Ember.TextField valueBinding="email"}}
+				</div>
+				<div class="input text">
+					<label>Website</label>
+					{{view Ember.TextField valueBinding="website"}}
+				</div>
+				<div class="input textarea">
+					<label>Comment</label>
+					{{view Ember.TextArea valueBinding="body"}}
+				</div>
+				<div class="submit">
+					<input type="submit" value="Add Comment">
 				</div>
 			</fieldset>
 		</form>

@@ -1,3 +1,5 @@
+This application is very incomplete.
+
 ## Setup
 
 	cp Config/core.php.default Config/core.php

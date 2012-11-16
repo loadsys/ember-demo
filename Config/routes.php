@@ -30,15 +30,13 @@ Router::connect(
 );
 
 Router::connect(
-	'/api/posts/:post_id/comments',
-	array('controller' => 'comments', 'action' => 'index', '[method]' => 'GET'),
-	array('post_id' => '[0-9]+')
+	'/api/comments',
+	array('controller' => 'comments', 'action' => 'index', '[method]' => 'GET')
 );
 
 Router::connect(
-	'/api/posts/:post_id/comments',
-	array('controller' => 'comments', 'action' => 'add', '[method]' => 'POST'),
-	array('post_id' => '[0-9]+')
+	'/api/comments',
+	array('controller' => 'comments', 'action' => 'add', '[method]' => 'POST')
 );
 
 // CakePlugin::routes();

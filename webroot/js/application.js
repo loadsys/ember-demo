@@ -49,6 +49,7 @@
 		body:      DS.attr('string'),
 		modified:  DS.attr('date'),
 		created:   DS.attr('date'),
+		post_id:   DS.attr('number'),
 
 		post:      DS.belongsTo('App.Post')
 	});
@@ -105,6 +106,15 @@
 		}
 	});
 
+	App.CommentsController = Ember.ArrayController.extend();
+
+	App.CommentFormController = Ember.ObjectController.extend({
+		createComment: function() {
+			App.store.commit();
+			this.set('content', App.store.createRecord(App.Comment));
+		}
+	});
+
 	// Views define information about the templates that will be rendered, and
 	// will handle events.
 	App.ApplicationView = Ember.View.extend({
@@ -148,6 +158,20 @@
 		}
 	});
 
+	App.CommentsView = Ember.View.extend({
+		templateName: 'comments',
+		tagName:      'section'
+	});
+
+	App.CommentFormView = Ember.View.extend({
+		templateName: 'comment-form',
+
+		submit: function(event) {
+			this.get('controller').createComment();
+			event.preventDefault();
+		}
+	});
+
 	// By defining a view like this, it can be used in templates like so:
 	// {{view App.DatePickerField valueBinding="publishedDate"}}
 	App.DatePickerField = Ember.View.extend({
@@ -181,6 +205,7 @@
 			enter: function() {
 				// Create a list of all posts for the app to use
 				App.posts = App.store.findAll(App.Post);
+				App.comments = App.store.findAll(App.Comment);
 			},
 			// Index route that is run at the the root of the application.
 			index: Ember.Route.extend({
@@ -211,6 +236,18 @@
 
 					connectOutlets: function(router, context) {
 						router.get('applicationController').connectOutlet('content', 'post', context);
+						router.get('postController').connectOutlet('comments', App.comments.filter(function() {
+							return item.get('post_id') === context.get('id');
+						}));
+						router.get('commentsController').connectOutlet('commentForm', App.store.createRecord(App.Comment));
+						router.get('commentFormController').set('post_id', context.get('id'));
+					},
+
+					// When exiting this state, rollback the default transaction
+					// so that any new comments that are not saved are not saved
+					// later
+					exit: function() {
+						App.store.rollback();
 					}
 				}),
 

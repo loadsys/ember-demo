@@ -3,9 +3,8 @@ App::uses('AppController', 'Controller');
 
 class CommentsController extends AppController {
 	public function index() {
-		$postId = $this->params('post_id');
 		$this->Comment->recursive = 0;
-		$comments = $this->Comment->findAllByPostId($postId);
+		$comments = $this->_transform($this->Comment->find('all'));
 		$this->setBody(array('comments' => $comments['Comment']));
 	}
 
@@ -14,17 +13,6 @@ class CommentsController extends AppController {
 		if ($this->Comment->createComment($this->data())) {
 			$this->Comment->recursive = 0;
 			$comment = $this->_transform($this->Comment->findById($this->Comment->id));
-		} else {
-			// Set failure statusCode
-		}
-		$this->setBody($comment);
-	}
-
-	public function edit() {
-		$commentId = $this->params('comment_id');
-		if ($this->Comment->updateComment($this->data())) {
-			$this->Comment->recursive = 0;
-			$comment = $this->_transform($this->Comment->findById(null, $commentId));
 		} else {
 			// Set failure statusCode
 		}
